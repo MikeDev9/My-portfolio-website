@@ -1,21 +1,21 @@
 <?php
   if (isset($_POST["submit"])) {
-    $text = $_POST["name"];
+    $username = $_POST["name"];
     $email = $_POST["email"];
-    $text = $_POST["project"];
+    $phone = $_POST["phone"];
     $message = $_POST["message"];
 
     $to = $email;
     $subject = $message;
 
-    $message = "Name: {$username} Email: {$email} text: {$project}  Message: " . $message;
+    $message = "Name: {$username} Email: {$email} Phone: {$phone}  Message: " . $message;
 
     // Always set content-type when sending HTML email
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
     // More headers
-    $headers .= 'From: devosec21@gmail.com';
+    $headers .= 'From: bravecoderofficial@gmail.com';
 
     $mail = mail($to,$subject,$message,$headers);
 
