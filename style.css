@@ -110,6 +110,7 @@ header .user .name{
 header .user .post{
     font-size: 2rem;
     color:#eee;
+    background: brown;
 }
 
 header .navbar{
